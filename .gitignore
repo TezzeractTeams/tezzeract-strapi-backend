@@ -1,1 +1,5 @@
 node_modules
+ode_modules/
+.env
+.tmp/
+build/
