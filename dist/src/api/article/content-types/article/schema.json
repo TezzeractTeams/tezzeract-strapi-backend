@@ -38,14 +38,14 @@
             "target": "api::author.author",
             "inversedBy": "articles"
         },
+        "Content": {
+            "type": "blocks"
+        },
         "category": {
             "type": "relation",
             "relation": "manyToOne",
             "target": "api::category.category",
             "inversedBy": "articles"
-        },
-        "Content": {
-            "type": "richtext"
         },
         "blocks": {
             "type": "dynamiczone",
