@@ -32,6 +32,9 @@
         "files"
       ]
     },
+    "Content": {
+      "type": "richtext"
+    },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
