@@ -26,6 +26,9 @@
     },
     "Tag": {
       "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
     }
   }
 }
