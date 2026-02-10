@@ -33,7 +33,7 @@
       ]
     },
     "Content": {
-      "type": "richtext"
+      "type": "blocks"
     },
     "author": {
       "type": "relation",
