@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "Tag": {
       "type": "text",
       "maxLength": 800
     },
@@ -43,6 +43,9 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "Content": {
+      "type": "richtext"
     },
     "blocks": {
       "type": "dynamiczone",
