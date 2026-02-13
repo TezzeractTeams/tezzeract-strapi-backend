@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-    // Cloudinary Upload provider
     upload: {
       config: {
         provider: 'cloudinary',
@@ -7,9 +6,15 @@ module.exports = ({ env }) => ({
           cloud_name: env('CLOUDINARY_NAME'),
           api_key: env('CLOUDINARY_KEY'),
           api_secret: env('CLOUDINARY_SECRET'),
+          // Optional: put all images in a folder
+          folder: 'strapi',
         },
         actionOptions: {
-          upload: {},
+          upload: {
+            // This ensures Strapi requests a Cloudinary thumbnail for preview
+            use_filename: true,
+            unique_filename: false,
+          },
           delete: {},
         },
       },
