@@ -609,23 +609,46 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Approach_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    Approach_text: Schema.Attribute.String;
+    author: Schema.Attribute.Relation<'oneToOne', 'api::author.author'>;
+    Challenge_Description: Schema.Attribute.String;
+    Challenge_heading: Schema.Attribute.String;
     Content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.Blocks;
     Image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    Impact1: Schema.Attribute.Blocks;
+    Impact2: Schema.Attribute.Blocks;
+    Impact3: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::portfolio.portfolio'
     > &
       Schema.Attribute.Private;
+    Logo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     Name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    Tag: Schema.Attribute.String;
+    Solution_images: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    Solution_text: Schema.Attribute.String;
+    Tag1: Schema.Attribute.String;
+    Tag2: Schema.Attribute.String;
+    Tag3: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

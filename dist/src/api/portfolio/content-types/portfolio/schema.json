@@ -24,10 +24,75 @@
                 "audios"
             ]
         },
-        "Tag": {
+        "Logo": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Tag1": {
             "type": "string"
         },
+        "Tag2": {
+            "type": "string"
+        },
+        "Tag3": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "blocks"
+        },
+        "author": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::author.author"
+        },
         "Content": {
+            "type": "blocks"
+        },
+        "Challenge_heading": {
+            "type": "string"
+        },
+        "Challenge_Description": {
+            "type": "string"
+        },
+        "Approach_text": {
+            "type": "string"
+        },
+        "Approach_image": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Solution_text": {
+            "type": "string"
+        },
+        "Solution_images": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Impact1": {
+            "type": "blocks"
+        },
+        "Impact2": {
+            "type": "blocks"
+        },
+        "Impact3": {
             "type": "blocks"
         }
     }
