@@ -614,7 +614,7 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
       true
     >;
     Approach_text: Schema.Attribute.String;
-    author: Schema.Attribute.Relation<'oneToOne', 'api::author.author'>;
+    authors: Schema.Attribute.Relation<'oneToMany', 'api::author.author'>;
     Challenge_Description: Schema.Attribute.String;
     Challenge_heading: Schema.Attribute.String;
     Content: Schema.Attribute.Blocks;
