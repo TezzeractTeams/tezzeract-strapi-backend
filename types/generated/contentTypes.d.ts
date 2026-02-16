@@ -613,9 +613,9 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    Approach_text: Schema.Attribute.String;
+    Approach_text: Schema.Attribute.Text;
     authors: Schema.Attribute.Relation<'oneToMany', 'api::author.author'>;
-    Challenge_Description: Schema.Attribute.String;
+    Challenge_Description: Schema.Attribute.Text;
     Challenge_heading: Schema.Attribute.String;
     Content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
@@ -645,7 +645,7 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    Solution_text: Schema.Attribute.String;
+    Solution_text: Schema.Attribute.Text;
     Tag1: Schema.Attribute.String;
     Tag2: Schema.Attribute.String;
     Tag3: Schema.Attribute.String;

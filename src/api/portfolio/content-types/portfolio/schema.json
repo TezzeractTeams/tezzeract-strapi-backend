@@ -58,10 +58,10 @@
       "type": "string"
     },
     "Challenge_Description": {
-      "type": "string"
+      "type": "text"
     },
     "Approach_text": {
-      "type": "string"
+      "type": "text"
     },
     "Approach_image": {
       "type": "media",
@@ -74,7 +74,7 @@
       ]
     },
     "Solution_text": {
-      "type": "string"
+      "type": "text"
     },
     "Solution_images": {
       "type": "media",
