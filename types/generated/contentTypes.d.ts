@@ -526,6 +526,10 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    portfolios: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::portfolio.portfolio'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -614,7 +618,7 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
       true
     >;
     Approach_text: Schema.Attribute.Text;
-    authors: Schema.Attribute.Relation<'oneToMany', 'api::author.author'>;
+    authors: Schema.Attribute.Relation<'manyToMany', 'api::author.author'>;
     Challenge_Description: Schema.Attribute.Text;
     Challenge_heading: Schema.Attribute.String;
     Content: Schema.Attribute.Blocks;

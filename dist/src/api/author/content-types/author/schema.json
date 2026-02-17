@@ -39,6 +39,12 @@
         },
         "Title": {
             "type": "string"
+        },
+        "portfolios": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::portfolio.portfolio",
+            "inversedBy": "authors"
         }
     }
 }

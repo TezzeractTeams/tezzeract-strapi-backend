@@ -48,8 +48,9 @@
     },
     "authors": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::author.author"
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "mappedBy": "portfolios"
     },
     "Content": {
       "type": "blocks"
